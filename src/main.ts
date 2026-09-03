@@ -9,10 +9,6 @@ import { Component } from '@angular/core';
 })
 class App {
   personName: string = 'Nina';
-
-  onButtonClick() {
-    this.personName = 'Giridhar';
-  }
 }
 
 bootstrapApplication(App);
