@@ -5,7 +5,11 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   standalone: true,
   /* Interpolation */
-  template: `<h1>Hello {{ personName }}</h1>`,
+  template: `
+    <h1>Hello {{ personName + (1 + 2) }}</h1>
+    // Interpolation with expression
+    <p>Upper cased Person Name: {{ personName.toUpperCase() }}</p>
+  `,
 })
 class App {
   personName: string = 'Nina';
