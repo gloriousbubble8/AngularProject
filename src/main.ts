@@ -4,17 +4,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   standalone: true,
-  template: 
-      `
-        <h1>Hello, {{personName}}</h1>
-        <button (click)="onButtonClick()">Click Here</button>
-      `
+  /* Interpolation */
+  template: `<h1>Hello {{ personName }}</h1>`,
 })
 class App {
-  personName: string = "Nina";
+  personName: string = 'Nina';
 
   onButtonClick() {
-    this.personName = "Giridhar";
+    this.personName = 'Giridhar';
   }
 }
 
