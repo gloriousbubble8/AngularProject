@@ -1,18 +1,17 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { Component } from '@angular/core';
+import { AngularComponentBasics } from './app/angular-component-basics/angular-component-basics';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   /* Interpolation */
-  template: `
-    <h1>Hello {{ personName + (1 + 2) }}</h1>
-    // Interpolation with expression
-    <p>Upper cased Person Name: {{ personName.toUpperCase() }}</p>
-  `,
+  templateUrl: './app/app.html',
+  imports: [AngularComponentBasics],
 })
 class App {
   personName: string = 'Nina';
+  val: string = '';
 }
 
 bootstrapApplication(App);
