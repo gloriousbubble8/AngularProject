@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { EventBindingComp } from './event-binding-comp/event-binding-comp';
+import { TwoWayBindingComp } from './two-way-binding-comp/two-way-binding-comp';
 
 @Component({
   selector: 'app-root',
-  imports: [EventBindingComp],
+  imports: [TwoWayBindingComp],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

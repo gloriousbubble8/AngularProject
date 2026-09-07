@@ -1,0 +1,10 @@
+<h1>Two-Way Binding Component</h1>
+<input type="text" 
+[(ngModel)]="value"
+placeholder="Enter text here" />
+
+<button 
+    class = "btn btn-primary"
+    (click)="checkTheValue()">
+    View Changed value
+</button>
