@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports: [FormsModule],
+  imports: [FormsModule], // Without this import [(ngModule)] won't work
   selector: 'app-two-way-binding-comp',
   styleUrl: './two-way-binding-comp.css',
   templateUrl: './two-way-binding-comp.html',
