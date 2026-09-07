@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { ComponentBasics } from './component-basics/component-basics';
+import { StringInterpolationComp } from './string-interpolation-comp/string-interpolation-comp';
 
 @Component({
   selector: 'app-root',
-  imports: [ComponentBasics],
+  imports: [StringInterpolationComp],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
