@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { AngularBasics } from './angular-basics';
+import { ComponentBasics } from './component-basics';
 
-describe('AngularBasics', () => {
-  let component: AngularBasics;
-  let fixture: ComponentFixture<AngularBasics>;
+describe('ComponentBasics', () => {
+  let component: ComponentBasics;
+  let fixture: ComponentFixture<ComponentBasics>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AngularBasics],
+      imports: [ComponentBasics],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(AngularBasics);
+    fixture = TestBed.createComponent(ComponentBasics);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
