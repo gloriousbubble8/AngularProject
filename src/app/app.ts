@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { StringInterpolationComp } from './string-interpolation-comp/string-interpolation-comp';
+import { PropertyBindingComp } from './property-binding-comp/property-binding-comp';
 
 @Component({
   selector: 'app-root',
-  imports: [StringInterpolationComp],
+  imports: [PropertyBindingComp],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
